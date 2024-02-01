@@ -7,18 +7,46 @@ import { useState } from 'react';
 function App() {
   const [text, setText] = useState("")
   
+  // FOR UPPERCASE 
 const upClick = ()=>{
-  // console.log("clicked");
   let newText = text.toUpperCase();
   setText(newText)
 }
+
+ // FOR LOWERCASE 
 const lowerCase = ()=>{
-  // console.log("clicked");
   let newText = text.toLowerCase();
   setText(newText)
 }
+
+ // FOR CLEARTEXT 
+const clearText = ()=>{
+  let newText = (" ");
+  setText(newText)
+}
+ // FOR REVERSE TEXT
+const reverseText = ()=>{
+  let newText = text.split('').reverse().join('');
+  setText(newText)
+}
+ // FOR WHITE TEXT
+const whiteSpace = ()=>{
+  let newText = text.replace(/\s+/g, ' ');
+  newText = newText.trim();
+  setText(newText)
+}
+ // FOR FIRST LETTER CAPITAL
+ const firstletter = ()=>{
+  let newText = text.toLowerCase()
+  .split(' ')
+  .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+  .join(' ');;
+
+  setText(newText)
+}
+
+ // FOR TEXTAREA
 const onClick = (event)=>{
-  // console.log("clicked");
   setText(event.target.value)
 }
   
@@ -36,6 +64,10 @@ const onClick = (event)=>{
 
 <button type="button" className="btn btn-success m-2 mt-4 "  onClick={upClick}>Convert To Upercase</button>
      <button type="button" className="btn btn-success m-2 mt-4" onClick={lowerCase}> Convert To Lower Case</button>
+     <button type="button" className="btn btn-success m-2 mt-4" onClick={clearText}> Clear All</button>
+     <button type="button" className="btn btn-success m-2 mt-4" onClick={reverseText}> Reverse Text</button>
+     <button type="button" className="btn btn-success m-2 mt-4" onClick={whiteSpace}> Remove White Space</button>
+     <button type="button" className="btn btn-success m-2 mt-4" onClick={firstletter}> First Letter Capital For All Words</button>
      </div>
 </div>
 

@@ -1,0 +1,101 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+#light{
+  transition: 0.5s;
+height: 800px;
+  background-color: #5880cf;
+}
+#light .navbar{
+  color: #ffffff !important;
+  background-color: #9eb3dd !important;
+}
+#light .navbar button {
+  color: #000000 !important;
+border: 1px solid white !important;
+}
+#light .card{
+  color: rgb(0, 0, 0);
+  background-color: #9eb3dd !important;
+  border: 1px solid black !important;
+}
+#light .collapsed{
+  color: rgb(0, 0, 0);
+  background-color: #9eb3dd !important;
+  border: 1px solid black !important;
+
+}
+
+
+#dark{
+  transition: 0.7s;
+
+height: 800px;
+background-color: black;
+}
+#dark .navbar{
+
+  color: white !important;
+  background-color: #1b1c1f !important;
+}
+#dark .navbar a{
+  color: white !important;
+
+}
+#dark .navbar button {
+  color: #ffffff !important;
+border: 1px solid white;
+}
+#dark .card{
+  color: white;
+  background-color: #1b1c1f;
+}
+#dark .collapsed{
+  color: white;
+  background-color: #1b1c1f;
+}
+.form-check {
+  position: absolute;
+    top: 17px;
+    right: 25%;
+}
+#dark .white{
+  color:white;
+}

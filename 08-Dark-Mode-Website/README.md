@@ -1,3 +1,12 @@
+Light Mode :
+
+
+![light-mode](https://github.com/shahmeerrizwan/React-Course/assets/148860820/d6588047-923c-404e-ab6d-d5dc4a95164c)
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

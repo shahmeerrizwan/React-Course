@@ -1,3 +1,15 @@
+# Light Mode 
+
+![navbar](https://github.com/shahmeerrizwan/React-Course/assets/148860820/4ac9788b-581b-4a28-a005-978db2af7d6c)
+
+
+
+# Dark Mode 
+
+![navbar2](https://github.com/shahmeerrizwan/React-Course/assets/148860820/746ea2d2-52be-4390-b6d6-7d3ff47ea1c4)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

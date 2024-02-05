@@ -1,0 +1,241 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.light{
+  transition: 1s !important;
+height: cover;
+  background-color: #5880cf;
+}
+.light .navbar{
+  color: #ffffff !important;
+  background-color: #9eb3dd !important;
+}
+.light .navbar button {
+  color: #000000 !important;
+border: 1px solid white !important;
+}
+.light .card{
+  color: rgb(0, 0, 0);
+  background-color: #9eb3dd !important;
+  border: 1px solid black !important;
+}
+.light .collapsed{
+  color: rgb(0, 0, 0);
+  background-color: #9eb3dd !important;
+  border: 1px solid black !important;
+
+}
+.light .top .btn {
+border: 2px solid black !important;
+color: #000000 !important;
+}
+  
+
+/* Dark Mode */
+
+.dark{
+  transition: 0.7s;
+
+height: cover;
+background-color: rgb(4, 14, 110) !important;
+}
+.dark .navbar{
+ border-bottom: 3px solid white  !important;
+  color: white !important;
+  background-color: #080b66 !important;
+}
+.dark .navbar a{
+  color: white !important;
+
+}
+.dark .card .btn {
+  color: #ffffff !important;
+  border: 3px solid white !important;
+  background-color: rgb(0, 68, 255) !important;
+}
+.dark .card{
+  color: white;
+  background-color: #0051ff !important;
+  border: 3px solid rgb(255, 255, 255) !important;
+}
+.dark .collapsed{
+  color: white;
+  background-color: #000000;
+}
+.form-check {
+  position: absolute;
+    top: 17px;
+    right: 25%;
+}
+.dark .white{
+  color:white;
+}
+.dark .top .btn {
+  border: 2px solid rgb(255, 255, 255) !important;
+  background-color: transparent !important;
+  color: #ffffff !important;
+  }
+
+/* YELLOW */
+
+.yellow .card{
+  background-color: #fdf598 !important;
+  color: black !important;
+  border: 1px solid black !important;
+}
+.yellow{
+  transition: 1s !important;
+  background-color: rgb(187, 166, 29);
+}
+.yellow .navbar {
+  color: black !important;
+  background-color: rgb(246, 239, 26) !important;
+} 
+.yellow .navbar a{
+  color: #000000 !important;
+}
+
+.yellow .top .btn {
+  border: 2px solid black !important;
+  color: #000000 !important;
+  }
+
+.dark .btn{
+  background-color: white !important;
+  color: #000000 !important;
+  border: 1px solid black !important;
+}
+.yellow .btn{
+  background-color: white !important;
+  color: #000000 !important;
+  border: 1px solid black !important;
+}
+.upp {
+  right: 10% !important;
+  top: 10% !important;
+}
+.down {
+  right: 20% !important;
+  top: 10% !important;
+}
+
+
+/* Red Mode */
+
+.red  {
+  transition: 0.5s;
+
+background-color: rgb(215, 33, 33) ;
+height: cover;
+color: white !important;
+}
+.red .navbar {
+  background-color: red !important;
+  color: white !important;
+  border-bottom:  3px solid rgb(255, 255, 255) !important;
+
+}
+.red .top .btn {
+  border: 2px solid rgb(255, 255, 255) !important;
+  color: #ffffff !important;
+  }
+.red .navbar a{
+  color: white !important;
+}
+.red .card {
+  background-color: rgba(255, 0, 0, 0.591) !important;
+  color: white !important;
+  border: 3px solid rgb(255, 255, 255) !important;
+}
+.red .card .btn {
+  background-color: red !important;
+  color: white !important;
+  border: 2px solid white !important;
+}
+
+/* Black Mode */
+
+.black {
+  transition: 1s !important;
+  background-color: #000000 !important;
+  color: white !important;
+}
+.black .card {
+  background-color: #00000027 !important;
+color: white !important;
+border: 2px solid white !important;
+}
+.black .card .btn {
+  background-color: #00000027 !important;
+color: white !important;
+border: 2px solid white !important;
+}
+.black .navbar {
+  background-color: #000000 !important;
+  color: white !important;
+  border-bottom: 2px solid white !important;
+}
+.black .navbar a {
+  color: white !important;
+}
+.black .top .btn {
+  border: 2px solid rgb(255, 255, 255) !important;
+  background-color: transparent !important;
+  color: #ffffff !important;
+  }
+
+
+ /* Extra CSS */
+
+.top {
+  
+    right: 5%;
+    align-items: unset;
+    display: flex;
+    justify-content: space-evenly;
+    top: 8px !important;
+    position: absolute;
+  }
+
+  .top .btn{
+    margin-right: 10px
+  }
+  .navbar {
+    height: 70px !important;
+  }

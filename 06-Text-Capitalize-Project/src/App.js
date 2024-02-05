@@ -50,6 +50,14 @@ const onClick = (event)=>{
   setText(event.target.value)
 }
   
+const wordCount = (text)=>{
+  let regex = /\s+\S+/;
+  let numOfWords = text.split(regex);
+  return numOfWords.length;
+}
+
+
+
   return (
  
 
@@ -73,8 +81,8 @@ const onClick = (event)=>{
 
 <div className="container my-3">
   <h1>Your Text Summary :</h1>
-  <p className='bold'> {text.split(" ").length} Words And {text.length} Character</p>
-  <p className='bold'>{0.008 * text.split(" ").length} Minutes Read</p>
+  <p className='bold'> {text===""? 0 : wordCount(text)} Words And {text.length} Character </p>
+  <p className='bold'>{ text===""? 0 * 0.008 : wordCount(text) * 0.008} Minutes Read </p>
   <h1>Preview :</h1>
   <textarea className="form-control " name="comment" form="usrform" placeholder='Preview' value={text} onChange={onClick} id="same" rows="12" cols="50"> {text} </textarea>
 

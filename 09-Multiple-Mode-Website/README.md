@@ -1,4 +1,4 @@
- # This is a Multiple Mode Website in Which You Can Switch Any Color Mode 
+ # This is a Multiple  Color Mode Website in Which You Can Switch Any Color Mode 
 
 
 

@@ -23,6 +23,13 @@
 
 
 
+04 ) RED MODE :
+
+
+![red mode](https://github.com/shahmeerrizwan/React-Course/assets/148860820/8657d325-4748-462b-a593-d434b9c7fee8)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

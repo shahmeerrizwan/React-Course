@@ -1,6 +1,14 @@
  # This is a Multiple  Color Mode Website in Which You Can Switch Any Color Mode 
 
 
+01 ) LIGHT MODE (DEFFAULT) :
+
+
+![light mode](https://github.com/shahmeerrizwan/React-Course/assets/148860820/1f01daa7-034f-4331-9e5d-b3bfe3a45349)
+
+
+
+
 
 
 # Getting Started with Create React App

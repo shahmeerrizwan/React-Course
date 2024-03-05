@@ -1,0 +1,157 @@
+.flex {
+    display: flex;
+    margin-top: 10px;
+    padding: 5px;
+  }
+  .heading{
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgb(41, 40, 40);
+    margin-top: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  .heading:hover{
+    color: red;
+  }
+  .left img {
+    width: 100%;
+  }
+
+  .cl{
+    margin-left: 5px;
+    overflow: hidden;
+    font-size: 10px;
+    font-weight: 500;
+    color: rgb(24, 23, 23);
+  }
+  .cl:hover{
+    color: red;
+    cursor: pointer;
+  }
+  .left {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .left img {
+    width: 100%;
+
+  }
+  
+  .mid {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .right {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .margin {
+    margin: 10px;
+  }
+  
+  .margin-1 {
+    margin-top: 20px;
+  }
+  
+  .flex-1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .grad {
+    background: linear-gradient(to right, purple, orange, red, blue);
+   
+    color: transparent;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .wrap {
+    flex-wrap: wrap;
+  }
+  
+  @media screen and (max-width: 995px) {
+    .left {
+      width: 100%;
+    
+      display: flex;
+      flex-direction: column;
+  
+    }
+    .right p {
+      display: none;
+    }
+    .mid p{
+      display: none;
+    }
+  .flex {
+    padding: 0 !important;
+  }
+ 
+    .left img {
+      width: 100%;
+   
+    }
+    .left h2{
+      text-align: center;
+    }
+  
+  
+    .cont {
+      flex-direction: column;
+      overflow: hidden;
+    }
+  
+    .mid {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      overflow: hidden;
+      margin-top: 10px;   
+    padding-left: 5px;
+    padding-right: 5px;
+    
+      justify-content: space-between;
+    }
+  
+    .right{
+      width: 100%;
+      padding-left: 5px;
+      padding-right: 5px;
+      display: flex;
+      flex-direction: row;
+     
+      margin-top: 20px;
+      justify-content: space-between;
+  
+    }
+  
+    .hidden {
+      display: none;
+    }
+  
+    .mid-1 {
+      display: flex;
+      flex-direction: column;
+      margin: 2px;
+      width: 25%;
+    }
+    .mid-1 img{
+      width: 100%;
+    }
+   
+  .border{
+    height: fit-content !important;
+  }
+  
+  }

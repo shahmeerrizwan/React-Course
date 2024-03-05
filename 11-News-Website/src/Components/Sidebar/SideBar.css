@@ -1,0 +1,230 @@
+.ag-format-container {
+    width: 1142px;
+    margin: 0 auto;
+  }
+  
+  .ag-content-page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  
+    min-height: 100vh;
+  }
+  
+  .ag-content {
+  
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+  
+  .ag-footer {
+  
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+  }
+  
+  .ag-header {
+    padding: 10px 0;
+    color: #f0f3f5;
+    background-color: #000000;
+  }
+  .ag-header_title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: #ffffff;
+  }
+  .small{
+    font-weight: 800;
+  }
+  .up{
+    position: relative;
+    bottom: 2px 
+  }
+  .sm-1{
+    font-size: 20px;
+    font-weight: 800;
+  }
+  .sm-2{
+    font-size: 10px;
+    color: rgb(181, 179, 179);
+  }
+  .sm-2:hover{
+    color: black;
+    font-weight: 550;
+    cursor: pointer;
+  }
+  
+  .ag-content-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+  
+    min-height: 100%;
+    margin: 20px 0 0;
+  
+    position: relative;
+  }
+  .ag-content_main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+  
+    min-height: 100%;
+  
+    position: relative;
+  }
+  
+  .ag-content-column_central {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+  
+    min-height: 100%;
+  
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  
+    position: relative;
+  }
+  .ag-content-column_right {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 300px;
+    flex: 0 0 300px;
+  
+    width: 300px;
+    margin: 0 0 0 20px;
+  
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .ag-content_sidebar {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 300px;
+    flex: 0 0 300px;
+  
+    width: 300px;
+    margin: 0 0 0 20px;
+  
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .js-ag-sidebar-content:not(.js-ag-fixed),
+  .js-ag-aside-content:not(.js-ag-fixed) {
+    -webkit-transform: translateY(0) !important;
+    -moz-transform: translateY(0) !important;
+    -o-transform: translateY(0) !important;
+    transform: translateY(0) !important;
+  }
+  
+  .js-ag-fixed {
+    width: 300px;
+  
+    position: fixed;
+    top: 0;
+  }
+  .js-ag-fixed_bottom {
+    width: 300px;
+  
+    position: absolute;
+    top: auto;
+    bottom: 0;
+  
+    -webkit-transform: translateY(0) !important;
+    -moz-transform: translateY(0) !important;
+    -o-transform: translateY(0) !important;
+    transform: translateY(0) !important;
+  }
+  
+  .ag-content_box {
+    margin: 0 0 20px;
+    padding: 20px;
+    background-color: #f0f3f5;
+  
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .ag-content_title {
+    margin: 0 0 10px;
+  
+    font-weight: bold;
+    font-size: 30px;
+    color: #000;
+  }
+  .ag-content_descr p {
+    line-height: 1.42;
+    margin: 0 0 15px;
+  
+    font-size: 14px;
+    color: #000;
+  }
+  
+  .ag-footer {
+    padding: 30px 0;
+    background-color: #21214c;
+  }
+  .ag-footer_title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    color: #000000;
+  }
+  
+  @media only screen and (max-width: 979px) {
+    .ag-content_sidebar {
+      display: none;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .ag-format-container {
+      width: 96%;
+    }
+  
+    .ag-content-column_right {
+      display: none;
+    }
+  }
+  
+  @media only screen and (max-width: 639px) {
+  
+  }
+  
+  @media only screen and (max-width: 479px) {
+  
+  }
+  
+  @media (min-width: 768px) and (max-width: 979px) {
+    .ag-format-container {
+      width: 750px;
+    }
+  
+  }
+  
+  @media (min-width: 980px) and (max-width: 1161px) {
+    .ag-format-container {
+      width: 960px;
+    }
+  
+  }
+  

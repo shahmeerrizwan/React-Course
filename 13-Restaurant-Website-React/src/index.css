@@ -1,0 +1,850 @@
+body{
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body a:hover{
+  color: orange;
+  text-decoration: none;
+}
+
+
+.firstheading h1{
+  font-size: 400% !important;
+  color: orange;
+  position: absolute;
+  line-height: 1;
+  z-index: -1;
+  left: 0px;
+  font-weight: bolder;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  right: 0px;
+  margin-top: -20px;
+}
+.bold{
+  font-weight: bolder;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: xx-large;
+}
+
+hr{
+  background-color: orange;
+  height: 5px;
+  width: 15%;
+  display: inline-block;
+}
+
+/* For Carousel */
+.carousel-item{
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+  
+.one{
+  background-image: url("image/image_6.jpg");
+}
+  
+.two{
+  background-image: url("image/lunch2.jpg");
+}
+
+.three{
+  background-image: url("image/gallery1.jpg");
+}
+
+.four{
+  background-image: url("image/myteam.jpg");
+}
+
+/* For Services */ 
+#services{
+  text-align: center;
+}
+
+#services .card{
+  display: inline-block;
+  text-align: center;
+  border: 0px none white !important;
+}
+
+#services .card img{
+  border-radius: 50%;
+  color: white;
+  background-color: orange;
+  width: 130px;
+  height: 130px;
+}
+
+/* For Menu */ 
+#menu{
+  text-align: center;
+}
+
+.fullmenu{
+  width: 24%;
+  height: 120px;
+  background-color: orange;
+  text-align: center;
+  display: inline-block;
+  margin-left: 1%;
+}
+
+#menu .card{
+  height: 250px;
+  margin: 5px 0 0 2.5%;
+  border: 0px white;
+}
+
+.fullmenu a{
+  color: black !important;
+}
+
+#menu .card img{
+  border-radius: 50%;
+}
+
+.bgpic{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  width: 100%;
+  height: 369px;
+  margin: auto; 
+}
+
+#dinner{
+  background-image: url("image/dinner.jpg");
+}
+
+#fastfood{
+  background-image: url("image/fastfood.jpg");
+}
+
+#drink{
+  background-image: url("image/drink.jpg");
+}
+
+#icecream{
+  background-image: url("image/icecreame.jpg");
+}
+
+/* For Team */ 
+#team{
+  text-align: center;
+}
+
+.teamtext img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.teamtext p{
+  padding-top: 10px;
+}
+
+.teamtext{      
+  display: inline-block;
+  text-align: center;
+}
+.shah{
+  height: 25vh !important;}
+
+/* For Contact */ 
+#contact{
+  text-align: center;
+}
+.contactUs{
+  text-align: center;
+  margin: auto;
+}
+#list{
+  justify-content:space-evenly ;
+}
+#mysubmit{
+  background-color: orange;
+}
+
+/* For Footer */
+#footer{
+  text-align: center;
+  background-color: black;
+} 
+
+#footer .card{
+  display: inline-block;
+  text-align: center;
+  border: 0px none white !important;
+  background-color: black;
+  color: white;
+}
+
+#rights{
+  text-align: center;
+  color: white;
+}
+
+#footer img{
+  border-radius: 50%;
+  margin-left: 10px;
+}
+@media only screen and (max-width: 1250px){
+  .bgpic{
+    height:275px ;
+  }
+}
+@media only screen and (max-width: 1100px){
+  .bgpic{
+    height:252px ;
+  }
+}
+@media only screen and (max-width: 1000px){
+  .bgpic{
+    height:217px ;
+  }
+}
+@media only screen and (max-width: 850px){
+  .bgpic{
+    height:172px ;
+  }
+}
+
+@media only screen and (max-width: 610px){
+
+  .fullmenu{
+ display: inline;
+  }
+.bgpic{
+  height: 237px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  width: 48%;
+  border-radius: 444%;
+
+}
+}
+@media only screen and (max-width: 475px){
+  .bgpic{
+    height: 191px;
+  }
+}
+
+
+
+
+/* Extra large devices (large laptops and desktops, 1201px and up) */
+@media only screen and (min-width: 1201px) {
+/* For Header */ 
+header{
+  height: 85px;
+  z-index: 100;
+  background: radial-gradient(black, transparent);
+  overflow: hidden;
+}
+
+#logo{
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+#list ul{
+float: right;
+}
+
+#list ul li{
+  display: inline-block;
+  margin: 5px 70px 0 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+header a{
+  text-decoration: none;
+  color: white;
+}
+
+/* For Carousel */
+.carousel-caption{
+  font-size: 200% !important;
+}
+
+.carousel-caption h1{
+  font-size: 200% !important;
+}
+  
+/* For About */  
+#about{
+  width: 70%;
+  text-align: center;
+  margin: 70px auto 0px auto;
+}
+.card-title{
+  font-size: 300% !important;
+  margin-bottom: 20px;
+  font-weight: bolder;
+  color:black;
+
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.secondheading h1{
+  color:black;
+
+  font-size: 300% !important;
+  margin-bottom: 20px;
+  font-weight: bolder;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.para{
+  font-size: large;
+  font-weight: 200;
+}
+
+.abouttext{
+  font-size: 20px;
+  display: inline-block;
+  margin: 0 50px;
+  font-weight: bolder;
+
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* For Services */  
+#services{
+  margin: 70px auto 0px auto;
+}
+
+#services .card{
+  width: 30%;
+  margin-left: 2.5%;
+}
+
+/* For Menu */ 
+#menu{
+  margin: 70px auto 0px auto;
+}
+
+#menu .card{
+  width: 30%;
+  display: inline-block;
+}
+
+/* For Team */ 
+#team{
+  margin: 70px auto 0px auto;
+}
+
+.teamtext{      
+  width: 30%;
+  margin-left: 2.5%;
+}
+
+/* For Contact */ 
+#contact{
+  margin: 70px auto 0px auto;
+}
+
+.contactUs{
+  width: 50%;
+}
+
+/* For Footer */
+#footer .card{
+  width: 30%;
+  margin-left: 2.5%;
+}
+}
+
+
+
+/* Large devices (laptops/desktops, from 993px to 1200px) */
+@media only screen and (max-width: 1200px) {
+/* For Header */ 
+header{
+  height: 85px;
+  z-index: 100;
+  background: radial-gradient(black, transparent);
+  overflow: hidden;
+}
+
+#logo{
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+#list ul{
+float: right;
+}
+
+#list ul li{
+  display: inline-block;
+  margin: 10px 60px 0 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+header a{
+  text-decoration: none;
+  color: white;
+}
+
+/* For Carousel */
+.carousel-caption{
+  font-size: 200% !important;
+}
+
+.carousel-caption h1{
+  font-size: 200% !important;
+}
+
+/* For About */  
+#about{
+  width: 85%;
+  text-align: center;
+  margin: 40px auto 0px auto;
+}
+
+.secondheading h1{
+  color:black;
+
+  font-size: 300% !important;
+  margin-bottom: 20px;
+  font-weight: bolder;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.abouttext{
+  display: inline-block;
+  margin: 0 50px;
+  font-weight: bolder;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+ 
+}
+
+/* For Services */  
+#services{
+  margin: 40px auto 0px auto;
+}
+
+#services .card{
+  width: 30%;
+  margin-left: 2.5%;
+}
+
+/* For Menu */ 
+#menu{
+  margin: 40px auto 0px auto;
+}
+
+#menu .card{
+  width: 30%;
+  display: inline-block;
+}
+
+/* For Team */ 
+#team{
+  margin: 40px auto 0px auto;
+}
+
+.teamtext{      
+  width: 30%;
+  margin-left: 2.5%;
+}
+
+/* For Contact */ 
+#contact{
+  margin: 40px auto 0px auto;
+}
+
+.contactUs{
+  width: 75%;
+}
+
+/* For Footer */ 
+#footer .card{
+  width: 32%;
+  margin-left: 1%;
+}
+}
+
+/* Medium devices (landscape tablets, from 768px to 992px) */
+@media only screen and (max-width: 992px) {
+/* For Header */ 
+header{
+  height: 85px;
+  z-index: 100;
+  background: radial-gradient(black, transparent);
+  overflow: hidden;
+}
+
+#logo{
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+#list ul{
+float: right;
+}
+
+#list ul li{
+  display: inline-block;
+  margin: 10px 30px 0 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+header a{
+  text-decoration: none;
+  color: white;
+}
+
+/* For Carousel */
+.carousel-caption{
+  font-size: 150% !important;
+}
+
+.carousel-caption h1{
+  font-size: 150% !important;
+}
+
+/* For About */  
+#about{
+  width: 85%;
+  text-align: center;
+  margin: 40px auto 0px auto;
+}
+
+.secondheading h1{
+  color:black;
+
+  font-size: 300% !important;
+  margin-bottom: 20px;
+  font-weight: bolder;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.abouttext{
+  display: inline-block;
+  margin: 0 30px;
+  font-weight: bolder;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+/* For Services */  
+#services{
+  margin: 30px auto 0px auto;
+}
+
+#services .card{
+  width: 30%;
+  margin-left: 2.5%;
+}
+
+/* For Menu */ 
+#menu{
+  margin: 30px auto 0px auto;
+}
+
+#menu .card{
+  width: 45%;
+  display: inline-block;
+}
+
+/* For Team */ 
+#team{
+  margin: 0px auto;
+}
+
+.teamtext{      
+  width: 30%;
+  margin-left: 2.5%;
+}
+
+/* For Contact */ 
+#contact{
+  margin: 30px auto 0px auto;
+}
+
+.contactUs{
+  width: 70%;
+}
+
+/* For Footer */ 
+#footer .card{
+  width: 30%;
+  margin-left: 2.5%;
+}
+}
+
+/* Small devices (portrait tablets and large phones, from 768px to 576px) */
+@media only screen and (max-width: 768px) {
+/* For Header */ 
+header{
+  height: 85px;
+  z-index: 100;
+  overflow: hidden;
+}
+
+#logo{
+  float: left;
+  width: auto;
+  text-align: center;
+}
+
+#list ul{
+  justify-content: center;
+  display: flex;
+ 
+width: 100%;
+padding: 0px;
+text-align: center;
+}
+
+#list ul li{
+  display: inline-block;
+  margin: 10px 15px 0 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+header a{
+  text-decoration: none;
+  color: white;
+}
+
+/* For Carousel */
+.carousel-caption{
+  font-size: 150% !important;
+}
+
+.carousel-caption h1{
+  font-size: 150% !important;
+}
+
+/* For About */  
+#about{
+  width: 85%;
+  text-align: center;
+  margin: 40px auto 0px auto;
+}
+
+.secondheading h1{
+  color:black;
+
+  font-size: 300% !important;
+  margin-bottom: 20px;
+  font-weight: bolder;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.abouttext{
+  display: block;
+  margin: 0 30px;
+  font-weight: bolder;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+/* For Services */  
+#services{
+  margin: 30px auto 0px auto;
+}
+
+#services .card{
+  width: 45%;
+  margin-left: 2.5%;
+}
+
+/* For Menu */ 
+#menu{
+  margin: 30px auto 0px auto;
+}
+
+#menu .card{
+  width: 45%;
+  display: inline-block;
+}
+
+/* For Team */ 
+#team{
+  margin: 0px auto;
+}
+
+.teamtext{      
+  width: 45%;
+  margin-left: 2.5%;
+}
+
+/* For Contact */ 
+#contact{
+  margin: 30px auto 0px auto;
+}
+
+.contactUs{
+  width: 70%;
+}
+
+#mysubmit{
+  background-color: orange;
+}
+
+/* For Footer */
+#footer .card{
+  width: 70%;
+  margin: auto;
+}
+}
+
+/* Extra small devices (phones, from 575px to ...) */
+@media only screen and (max-width: 575px) {
+/* For Header */ 
+header{
+  height: auto;
+  z-index: 100;
+  background-color: black;
+}
+
+#logo{
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+#list ul{
+  display: flow;
+  margin-top: 35px;
+  height: 100vh;
+  float: left;
+  width: auto;
+}
+
+#list ul li{
+  margin-left: 12px;
+  margin-bottom: 62px;
+  display: flex;
+  font-size: 34px;
+}
+.shah{
+  height: 100vh!important;}
+header a{
+  text-decoration: none;
+  color: white;
+}
+
+#myicon1{
+  height: 5px;
+  background-color: white;
+  margin-top: 20px;
+}  
+ 
+#myicon2{
+  height: 5px;
+  background-color: white;
+}
+        
+#myicon3{
+  height: 5px;
+  background-color: white;
+  margin-top: -10px;
+}
+  
+/* For Carousel */
+.carousel-caption{
+  font-size: 120% !important;
+}
+
+.carousel-caption h1{
+  font-size: 200% !important;
+}
+
+/* For About */  
+#about{
+  width: 85%;
+  text-align: center;
+  margin: 40px auto 0px auto;
+}
+.pic{
+  right: 48px;
+  position: relative;
+}
+.secondheading h1{
+  color:black;
+
+  font-size: 250% !important;
+  margin-bottom: 0px;
+  font-weight: bolder;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.abouttext{
+  display: block;
+  margin: 0 30px;
+  font-weight: bolder;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* For Services */  
+#services{
+  margin: 30px auto 0px auto;
+}
+
+#services .card{
+  width: 90%;
+  margin-left: 0%;
+}
+
+/* For Menu */ 
+#menu{
+  margin: 30px auto 0px auto;
+}
+
+#menu .card{
+  width: 90%;
+  display: initial;
+}
+
+#menu .card img{
+  height: 200px;
+  margin-top: 0%;
+  width: 200px;
+}
+
+#menu .card-body{
+  margin-top: 5px;
+}
+
+/* For Team */ 
+#team{
+  margin: 20px auto 0px auto;
+}
+
+.teamtext{      
+  width: 90%;
+  margin-left: 0%;
+}
+
+/* For Contact */ 
+#contact{
+  margin: 30px auto 0px auto;
+}
+
+.contactUs{
+  width: 70%;
+}
+
+/* For Footer */
+#footer .card{
+  width: 90%;
+  margin: auto;
+}
+}

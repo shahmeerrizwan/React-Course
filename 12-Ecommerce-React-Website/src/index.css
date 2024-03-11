@@ -1,0 +1,45 @@
+.navbar a{
+  color: white !important;
+ font-weight: bolder;
+
+gap: 30px !important;
+  
+}
+
+.navbar-nav-scroll{
+ font-weight: bolder;
+  margin-left: auto !important;
+  gap:30px;
+
+}
+.navbar{
+  background-color: rgb(12, 15, 93) !important;
+}
+/* CardComponent.css */
+
+.btn{
+  color: white !important;
+  background-color: rgb(9, 9, 80) !important;
+}
+.btn :hover{
+  background-color: rgb(164, 98, 0) !important;
+}
+
+.row {
+    display: flex !important;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin: auto !important;
+    max-width: 1200px  !important;
+    max-height: 1800px !important;
+}
+.card-img-top {
+    max-width: 350px  !important;
+    max-height: 250px !important;
+    margin: auto;
+    margin-top: 10px !important;
+}
+
+.navbar-toggler {
+background: revert-layer !important;
+color: black  !important;}

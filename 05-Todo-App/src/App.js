@@ -1,74 +1,74 @@
 import { useState } from "react";
-import './App.css';
 
 function App() {
-const [list,setList] = useState([]);
-const [inputValue, setInputValue] = useState();
-const [editMode, setEditMode] = useState(false);
-const [currentIndex, setCurrentIndex] = useState();
+  const [list, setList] = useState([]);
+  const [inputValue, setInputValue] = useState('');
+  const [editMode, setEditMode] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState();
 
-function addItem() {
-  const copyList = [...list];
-  copyList.push(inputValue);
-  setList(copyList);
+  function addItem() {
+    const copyList = [...list];
+    copyList.push(inputValue);
+    setList(copyList);
+    setInputValue('');
+  }
 
-  setInputValue('')
-}
+  function deleteItem(index) {
+    const copyList = [...list];
+    copyList.splice(index, 1);
+    setList(copyList);
+  }
 
-function deleteItem(index) {
-  const copyList = [...list];
-  copyList.splice(index,1);
-  setList(copyList);
-}
+  function editItem(index) {
+    setInputValue(list[index]);
+    setEditMode(true);
+    setCurrentIndex(index);
+  }
 
-function editItem (index) {
+  function updateItem() {
+    const copyList = [...list];
+    copyList[currentIndex] = inputValue;
+    setList(copyList);
+    setEditMode(false);
+    setInputValue('');
+  }
 
-  setInputValue(inputValue);
+  function updateText(e) {
+    const value = e.target.value;
+    setInputValue(value);
 
-  setEditMode(true)
-
-  setCurrentIndex(index)
-  
-}
-
-function updateItem() {
-  const copyList = [...list]
-  copyList[currentIndex] = inputValue
-  setList(copyList) 
-  
-  setEditMode(false)
-  setInputValue('')
-}
-
-function updateText(e) {
-  const value = e.target.value;
-  setInputValue(value);
-}
-
+    if (e.key === 'Enter') {
+      addItem();
+    }
+  }
 
   return (
-    <div className="App">
+    <div className="main">
       <div className="App-header">
-       <input onChange={updateText} placeholder="Enter Any Text" value={inputValue} type="text" />
-       {editMode ? 
-       <button onClick={updateItem}>Update</button> 
-      :
-      <button onClick={addItem}> Add </button>  }
-      
-      <ul>
-        {list.map(function (item, index) {
-          return (
-            <li> 
-              {item}
-              <button onClick={() => deleteItem(index)}>Delete</button>
-              <button onClick={() => editItem(index)}>Edit</button>
-            </li>
-          );
-          
-        })}
-      </ul>
+        <h2>Todo App</h2>
+        <input
+          onChange={updateText}
+          onKeyPress={updateText}
+          placeholder="Enter Any Text"
+          value={inputValue}
+          type="text"
+        />
+        {editMode ?
+          <button className="btn" onClick={updateItem}>Update</button>
+          :
+          <button className="btn" onClick={addItem}> Add </button>}
 
-
+        <ul>
+          {list.map(function (item, index) {
+            return (
+              <li key={index} className="update">
+                {item}
+                <button className="btn" onClick={() => deleteItem(index)}>Delete</button>
+                <button className="btn" onClick={() => editItem(index)}>Edit</button>
+              </li>
+            );
+          })}
+        </ul>
       </div>
     </div>
   );

@@ -1,0 +1,40 @@
+.client-sec {
+  text-align: center;
+  margin-top: 98px;
+}
+.f-sec h1 {
+  color: #58595b;
+  font-size: 40px;
+  margin-top: 30px;
+}
+.f-sec p {
+  color: #58595b;
+  font-size: large;
+  font-weight: 450;
+}
+.client-img img {
+  width: 50px;
+  cursor: pointer;
+}
+.client-img {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+@media (max-width: 550px) {
+  .client-img img {
+    width: 40px;
+  }
+  .f-sec h1 {
+    font-size: 33px;
+    margin-top: 17px;
+  }
+  .f-sec p {
+    margin-left: 7px;
+    font-size: 13px;
+  }
+
+  .client-img {
+    margin-top: 17px;
+  }
+}

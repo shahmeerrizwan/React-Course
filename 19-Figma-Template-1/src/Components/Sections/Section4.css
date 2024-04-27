@@ -1,0 +1,74 @@
+.s-4-m {
+  background-image: url("../../Assets/nav-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 937px;
+  position: relative;
+}
+.t-m h1 {
+  text-align: center;
+  color: white;
+  font-weight: 900;
+  font-size: 65px;
+}
+.t-m img {
+  display: flex;
+  margin: auto;
+  width: 50%;
+}
+.t-m {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, -50%);
+}
+.t-m button {
+  margin: auto;
+  display: flex;
+  width: 166px;
+  margin: auto;
+  display: flex;
+  padding: 8px;
+  color: white;
+  background-color: #002b64;
+  border: none;
+  margin-top: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.s-p {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 15px;
+  text-align: center;
+  color: white;
+}
+.s-p-1 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-top: 80px;
+  font-size: 15px;
+  font-weight: 600;
+}
+@media (max-width: 570px) {
+  .s-p-1 {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 35px;
+  }
+  .t-m button {
+    width: 127px;
+    font-size: 10px;
+  }
+  .t-m img {
+    width: 100%;
+  }
+  .s-4-m {
+    height: 110vh;
+  }
+}
